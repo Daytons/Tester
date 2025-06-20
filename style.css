@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f2f2f2;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+#input-section {
+    margin-bottom: 20px;
+}
+
+#thoughtContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 800px;
+}
+
+.thought {
+    padding: 10px 15px;
+    border-radius: 20px;
+    background: #ccc;
+    color: #000;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.thought:hover {
+    transform: scale(1.1);
+}
+
+/* Emotion Colors */
+.thought[data-emotion="calm"] {
+    background: #a0d8ef;
+}
+
+.thought[data-emotion="happy"] {
+    background: #fff176;
+}
+
+.thought[data-emotion="sad"] {
+    background: #b39ddb;
+}
+
+.thought[data-emotion="angry"] {
+    background: #ef9a9a;
+}
